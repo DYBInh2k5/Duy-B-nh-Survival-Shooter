@@ -70,3 +70,8 @@ Di chuyển: Mũi tên hoặc WASD
 Bắn: Chuột
 Skill: Space (bắn nhanh), B (bom), S (làm chậm)
 R: Chơi lại khi thua
+
+<img width="796" height="628" alt="Screenshot 2025-11-19 101140" src="https://github.com/user-attachments/assets/548af6ae-cbdf-4fbb-9516-0dcc868b7ded" />
+
+
+
