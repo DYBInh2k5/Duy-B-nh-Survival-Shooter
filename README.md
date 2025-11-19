@@ -30,3 +30,43 @@ Vẽ hình nền, các sprite, điểm số, hướng dẫn phím bấm.
 Khi game over, hiển thị thông báo và hướng dẫn chơi lại (phím R).
 7. Reset game
 Khi nhấn R, reset lại tất cả đối tượng, điểm số, skill.
+
+
+
+
+
+Dưới đây là tổng quan và hướng dẫn chi tiết từng bước để bạn tự làm lại dự án game bắn zombie bằng Python và Pygame:
+
+1. Chuẩn bị môi trường
+Cài đặt Python (khuyên dùng 3.11 trở lên).
+Cài đặt Pygame:
+Tạo thư mục dự án, ví dụ: Game
+Tạo các thư mục con:
+assets (lưu ảnh: player.png, zombie.png, map.png)
+File chính: main.py
+2. Tạo file ảnh
+Tìm hoặc tự thiết kế các file ảnh PNG cho nhân vật, zombie, bản đồ và lưu vào assets/.
+3. Viết code game (main.py)
+Khởi tạo cửa sổ game, load ảnh nền, ảnh nhân vật, zombie.
+Tạo các class:
+Player: Điều khiển di chuyển, sử dụng ảnh player.
+Zombie: Di chuyển về phía player, sử dụng ảnh zombie.
+Bullet: Đạn bắn ra từ player.
+Quản lý các nhóm sprite: player, zombie, bullet.
+Thêm các skill:
+Rapid Fire (Space): Bắn liên tục.
+Bomb (B): Tiêu diệt toàn bộ zombie trên màn hình.
+Slow (S): Làm chậm zombie.
+Xử lý va chạm, điểm số, game over, chơi lại (phím R).
+Vẽ hướng dẫn phím bấm và điểm số lên màn hình.
+4. Tích hợp hình ảnh
+Sử dụng pygame.image.load() để load ảnh cho player, zombie, map.
+Nếu không có ảnh, dùng hình vuông màu làm mặc định.
+5. Chạy game
+Mở terminal, chuyển vào thư mục Game:
+Chạy game:
+Thao tác bằng các phím:
+Di chuyển: Mũi tên hoặc WASD
+Bắn: Chuột
+Skill: Space (bắn nhanh), B (bom), S (làm chậm)
+R: Chơi lại khi thua
